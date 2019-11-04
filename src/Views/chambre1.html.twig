@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="assets/css/chambre1.css">
+    <title>Bienvenue dans la chambre</title>
+</head>
+<body>
+    <button id="btnPopup1" class="oreiller"></button>
+        <div id="overlay1" class="overlay">
+            <div id="popup1" class="popup">
+                    <button id="btnClose1" class="btnClose">Reposer le journal</button>
+                <p>Il y a un journal intime. Les premiers mots sont "La clé de mes secrets dort au dessus de moi depuis que j'ai 4 ans …."</p>
+            </div>
+        </div>
+    <button id="btnPopup2" class="coffrefort"></button>
+        <div id="overlay2" class="overlay">
+            <div id="popup2" class="popup">
+                    <button id="btnClose2" class="btnClose">Je ne le sens pas, je vais chercher d'autres indices</button>
+                <div>
+                    <p>Derrière ce tableau, il y a un coffre-fort avec une combinaison de 4 chiffres a inscire… Je tente ma chance ?</p>
+                        <div>
+                            <label for="code">Mon code est </label>
+                            <input name="code" id="code" placeholder="_ _ _ _">
+                            <h1 class="displayBlockFail">Mauvais code attention !</h1>
+                            <h1 class="displayBlockSucces"><a href="/chambre2.php"><button><a href="/chambre2.php">Prendre la clé</a></button></h1>
+                        </div>
+                        <div>
+                            <button onclick="controle()">Valider mon code</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    <button id="btnPopup3" class="coffre"></button>
+    <p></p>
+        <div id="overlay3" class="overlay">
+            <div id="popup" class="popup">
+                    <button id="btnClose3" class="btnClose">OK</button>
+                <p>=Il faut une clé pour l'ouvrir, c'est dommage.</p>
+            </div>
+        </div>
+    <button id="btnPopup4" class="miror"></button>
+    <p></p>
+        <div id="overlay4" class="overlay">
+            <div id="popup" class="popup">
+                    <button id="btnClose4" class="btnClose">OK</button>
+                <p>Rien de spécial sur ce mirror sauf cette inscription : "1980"</p>
+            </div>
+        </div>
+    <button id="btnPopup5" class="lampe1"></button>
+    <p></p>
+        <div id="overlay5" class="overlay">
+            <div id="popup" class="popup">
+                    <button id="btnClose5" class="btnClose">OK</button>
+                <p>La lampe est éteinte, on dirait que l'ampoule est grillée...</p>
+            </div>
+        </div>
+    <button id="btnPopup6" class="lampe2"></button>
+        <div id="overlay6" class="overlay">
+            <div id="popup" class="popup">
+                    <button id="btnClose6" class="btnClose">OK</button>
+                <p>La lampe est allumée, l'ampoule, ça marche bien !</p>
+            </div>
+        </div>
+    <button id="btnPopup7" class="lampe3"></button>
+    <p></p>
+        <div id="overlay7" class="overlay">
+            <div id="popup" class="popup">
+                    <button id="btnClose7" class="btnClose">OK</button>
+                <p>La lampe est allumée, l'ampoule, ça marche bien !</p>
+            </div>
+        </div>
+    <button id="btnPopup8" class="lampe4"></button>
+    <p></p>
+        <div id="overlay8" class="overlay">
+            <div id="popup" class="popup">
+                    <button id="btnClose8" class="btnClose">OK</button>
+                <p>La lampe est éteinte, on dirait que l'ampoule est grillée...</p>
+            </div>
+        </div>
+    <button id="btnPopup9" class="table"></button>
+        <div id="overlay9" class="overlay">
+            <div id="popup" class="popup">
+                    <button id="btnClose9" class="btnClose">OK</button>
+                <p>Une inscription est marquée sur la table :  "Je suis venu au monde la même année que mon reflet"</p>
+            </div>
+        </div>
+    <button id="btnPopup10" class="porte"></button>
+    <p></p>
+        <div id="overlay10" class="overlay">
+            <div id="popup" class="popup">
+                    <button id="btnClose10" class="btnClose">OK, bizarre !</button>
+                <p>La porte est fermée. On peut voir une indication : "Je m'ouvre quand la luminosité est à son maximum"</p>
+            </div>
+        </div>
+<script src="assets/scripts/script_chambre1.js"></script>
+</body>
+
+</html>

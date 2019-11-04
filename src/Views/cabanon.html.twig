@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La cabane au fond du jardin</title>
+    <link rel="stylesheet" href="assets/css/style_cabanon.css">
+</head>
+<body>
+
+<button class="cadenas_porte" id="cadenas_porte" onclick="isFinalKeyGet()"></button>
+<div id="c_porte_block" class="overlay">
+    <div class="popup">
+        <p>Le cadenas et la chaîne de la porte semblent trop solides pour être cassés par les outils de l'atelier...</p>
+        <button id="c_porte_block_off" class="btnClose" onclick="closeCloseDoorBlock()">Tant pis.</button>
+    </div>
+</div>
+<div id="c_porte_open_block" class="overlay">
+    <div class="popup">
+        <p>L'air frais ! ENFIN ! Mais je ferais mieux de faire attention cette fois ci... Je ne veux pas qu'il me rattrape.</p>
+        <form method="post" action="end.php">
+            <button id="c_porte_open_block_off" class="btnClose" onclick="closeOpenDoorBlock()">Sortir discretement</button>
+        </form>
+    </div>
+</div>
+<button class="roue" id="roue"></button>
+<div id="roue_block" class="overlay">
+    <div class="popup">
+        <p>Cette roue à l'air de tourner.</p>
+        <button id="roue_block_off" class="btnClose">Tourner</button>
+    </div>
+</div>
+<div id="roue_turned_text" class="overlay">
+    <div class="popup">
+        <p>Parmis le cliquetis des chaînes, il y a eu un bruit de mécanisme au niveau du tiroir de l'établi.</p>
+        <button id="closeTurnedText" class="btnClose">Génial !</button>
+    </div>
+</div>
+
+<div id="code_success" class="overlay">
+    <div class="popup">
+        <p>Génial le tiroir s'ouvre ! Et une clé est dedans !</p>
+        <button type="submit" id="closeWin" class="btnClose">Prendre la clé</button>
+
+    </div>
+</div>
+<div id="code_fail" class="overlay">
+    <div class="popup">
+        <p>Hmm... Ca ne s'ouvre pas, mon code ne doit pas être bon...</p>
+        <button type="submit" id="closeFail" class="btnClose">Continuer de chercher</button>
+    </div>
+</div>
+<div id="code_near_success" class="overlay">
+    <div class="popup">
+        <p>Ça s'entrouvre mais il doit me manquer un élément pour débloquer le tiroir.</p>
+        <button type="submit" id="closenearSuccess" class="btnClose">Continuer de chercher</button>
+    </div>
+</div>
+<div id="code_near_fail" class="overlay">
+    <div class="popup">
+        <p>Rien à faire... Ça ne s'ouvre pas</p>
+        <button type="submit" id="closenearFail" class="btnClose">Continuer de chercher</button>
+    </div>
+</div>
+
+
+<button class="tiroir" id="tiroir"></button>
+<div id="tiroir_block" class="overlay">
+    <div class="popup">
+        <p>Le tiroir est bloqué... Il y a un peu de jeu mais ça ne veut pas venir. Par contre, il y a un pavé numérique sur le côté avec une horloge dessiné sur le côté!</p>
+            <input name="code" type="text" id="code" placeholder="-   -   -">
+            <button type="submit" onclick="controle()" class="btnClose" id="tiroir_block_off">Entrer</button>
+    </div>
+</div>
+
+
+<button class="timer" id="timer"></button>
+<div id="timer_block" class="overlay">
+    <div class="popup">
+        <p>Son horloge à l'air bloquée. Elle ne doit pas servir à grand chose.</p>
+        <button id="timer_block_off"  class="btnClose">Tant pis</button>
+    </div>
+</div>
+
+
+<button id = "boitaclef" class="boitaclef" onclick="actionOnOpenBlock()"></button>
+<div id="boitaclef_open_block" class="overlay">
+    <div class="popup">
+        <p>La boite s'ouvre enfin ! Dedans ? Une clé ? C'est quoi ce bordel ? C'est la dernière ?</p>
+        <button id="boitaclef_block_off" class="btnClose" onclick="actionCloseBlock()">Prendre la clé</button>
+    </div>
+</div>
+<div id="boitaclef_block" class="overlay">
+    <div class="popup">
+        <p>Une boite en fer ? 3 serrures ? Mais où sont les clefs ?</p>
+        <button id="boitaclef_open_block_off" class="btnClose" onclick="actionOnCloseOpenBlock()">Tant pis</button>
+    </div>
+</div>
+
+
+<button id="hache" class="hache"></button>
+<div id="hache_block" class="overlay">
+    <div class="popup">
+        <p>Une Hache ? Je vais essayer de me frayer un passage à travers le bois. La porte a l'air renforcée je vais essayer au dessus de l'évier.</p>
+        <button id="hache_block_off" class="btnClose">Here's Johhny !</button>
+    </div>
+</div>
+<div id="hache_hole_block" class="overlay">
+    <div class="popup">
+        <p>Le trou dans le mur révèle une cavité... Une clé se trouve à l'intérieur !</p>
+        <button id="hache_hole_block_off" class="btnClose">Prendre la clé.</button>
+    </div>
+</div>
+
+
+<button id="evier" class="evier"></button>
+<div id="evier_block" class="overlay">
+    <div class="popup">
+        <p>Un évier plein de sang à moitié coagulé, de morceaux de boyaux et de morceaux de dents. C'est écrit "key" au dessus... Je dois vraiment fouiller dedans? </p>
+        <button id="evier_block_off" class="btnClose">Fouiller</button>
+    </div>
+</div>
+
+<div id="evier_block_fouille" class="overlay">
+    <div class="popup">
+        <p>Je crois reconnaitre, parmis les boyaux et autres trucs ignobles, une forme familière ! C'est la clé</p>
+        <button id="evier_block_off_fouille" class="btnClose">Prendre la clé !</button>
+    </div>
+</div>
+
+<button id="mot_cle" class="mot_cle" onclick="hachenco()"></button>
+<div id="mot_cle_block" class="overlay">
+    <div class="popup">
+        <p>Qui a écrit "Key" ? Je crois que ça veut dire clé... L'évier ne me donne pas envie...</p>
+        <button id="mot_cle_block_off" class="btnClose">Prendre son courage à deux mains</button>
+    </div>
+</div>
+<script src="assets/scripts/script_cabanon.js"></script>
+</body>
+</html>

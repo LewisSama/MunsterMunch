@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/Salon3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salon</title>
+</head>
+<body>
+    <button id="btnMiroir" class="miroir"></button>
+       <div id="overlay1" class='overlay'>
+           <div id='popup1' class='popup'>
+               <h3>
+                   Miroir
+                   <button id='btnClose1' class='btnClose'>continuer à chercher</button>
+               </h3>
+               <p>
+                   Beurk ce miroir n’a pas été entretenu depuis bien longtemps. Il semble y avoir quelque chose derrière. Je vais le décaler … Tiens ! Deux cryptex avec une note :
+               </p>
+               <div>
+                    <label for="code">Le bois brulant devient </label>
+                        <input name="code" id="code" placeholder=" _ _ _ _ _ _ _">
+                        <h1 class="displayBlockFail">Mauvaise réponse attention !</h1>
+                        <h1 class="displayBlockSucces"><a href="/cabanon.php"><button><a href="/cabanon.php">Continuer à chercher !</a></button></h1>
+                </div>                
+                <div>
+                    <label for="code2">puis deviens </label>
+                        <input name="code2" id="code2" placeholder=" _ _ _ _ _ ">
+                        <h1 class="displayBlockFail">Mauvaise réponse attention !</h1>
+                        <h1 class="displayBlockSucces"><a href="/cabanon.php"><button><a href="/cabanon.php">Continuer à chercher !</a></button></h1>
+                </div>
+                <div>
+                    <button onclick="controle()">Valider la réponse !</button>
+                </div>
+           </div>
+           </div>
+       </div>
+</body>
+<script src="assets/scripts/script3_salon.js"></script>
+</html>

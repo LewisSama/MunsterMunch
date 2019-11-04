@@ -1,0 +1,110 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+body
+{
+    position: relative;
+    background-color: black;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+.btnPopup{
+    background-color : royalblue;
+    padding: 1em;
+    cursor: pointer;
+ }
+
+ .btnPopup:hover{
+    background-color: yellow;
+ }
+ .overlay{
+    z-index: 1;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display:none;
+ }
+ .popup {
+    margin: 20% auto;
+    width: 70%;
+    background-color: rgb(228, 228, 228);
+    border-radius:5px;
+    box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 1em;
+
+ }
+ .btnClose{
+    float:right;
+    font-size: 15px;
+    border-radius: 8px;
+ }
+
+a
+{
+    text-decoration: none;    
+}
+ a:visited
+ {
+    color : initial;
+ }
+
+ .monster
+ {
+    display: flex;
+    position: absolute;
+    bottom : 0%;
+    left : 0%;
+    width: 40%;
+    height: 70%;
+ }
+
+ .accepterRegles
+{
+    z-index : 1;
+    position : absolute;
+    bottom : 5%;
+    right: 14%;
+    width: 13%;
+    height : 8%;
+    border-radius: 8px;
+}
+
+.porteAccueil
+{
+    display: flex;
+    position: absolute;
+    bottom : 8%;
+    right : 0%;
+    width: 40%;
+    height: 70%;
+ }
+
+ .fontHalloween
+ {
+    z-index: 2;
+    font-family: 'Creepster', cursive;
+    color: white;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top : 8%;
+    right : 24%;
+    font-size : 300%;
+    line-height: 150%;
+ }
+ .reglesDuJeu
+ {
+    font-family: 'Creepster', cursive;
+    color: black;
+    font-size: 140%;
+    line-height: 140%;
+ }
+
+ 

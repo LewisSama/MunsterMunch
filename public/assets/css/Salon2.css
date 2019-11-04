@@ -1,0 +1,116 @@
+html, body {
+    height: 100%;
+    margin: 0;
+   }
+
+   body
+   {
+    background-image: url(../img/Salon.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+   }
+
+    .boite
+    {
+    display: block;
+    width: 3%;
+    height: 4%;
+    background-color: green;
+    opacity: 0;
+    position: absolute;
+    right: 13.8%;
+    top: 62%;
+    border-radius: 30% 30% 30% 30%;
+    border: none;
+    }
+
+    .mallette
+    {
+    border: none;
+    display: block;
+    width: 15%;
+    height: 15.5%;
+    background-color: blue;
+    opacity: 0;
+    position: absolute;
+    right: 54%;
+    top: 66%;
+    border-radius: 40% 0% 0% 0%;
+    }    
+
+    .journal
+    {
+      border: none;
+      display: block;
+      width: 12%;
+      height: 11%;
+      background-color: green;
+      opacity: 0;
+      position: absolute;
+      right: 29%;
+      top: 70%;
+      border-radius: 0% 40% 0% 60%;
+    }
+
+    .image
+   {
+      border: none;
+      display: block;
+      width: 9%;
+      height: 11%;
+      background-color: blue;
+      opacity: 0;
+      position: absolute;
+      right: 41%;
+      top: 75%;
+      border-radius: 0% 21% 0% 0%;
+   }
+
+    .lustre
+    {
+      border: none;
+      display: block;
+      width: 14.4%;
+      height: 21%;
+      background-color: yellow;
+      opacity: 0;
+      position: absolute;
+      right: 46%;
+      top:2.5%;
+      border-radius: 40% 40% 40% 40%;
+    }
+
+    .overlay
+    {
+      position: fixed;
+      left: 0px;
+      top:0px;
+      background-color:rgba(5, 3, 3, 0.897);
+      width: 100%;
+      height: 100%;
+      display:none;
+     }
+     .popup
+     {
+      margin: 20% auto;
+      width: 70%;
+      background-color: rgb(241, 234, 234);
+      border-radius:5px;
+      box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.5);
+      padding: 1em;
+     }
+     .btnClose 
+     {
+      float:right;
+      size: 10px;
+     }
+
+     .displayBlockFail
+     {
+         display : none;
+         color : red;
+     }
+     .displayBlockSucces
+     {
+       display : none;
+     }

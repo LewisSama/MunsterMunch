@@ -1,0 +1,177 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+body
+{
+    position: relative;
+    background-image: url(../img/Chambre.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.oreiller
+{
+    display: block;
+    width: 10%;
+    height: 6%;
+    opacity: 0;
+    position: absolute;
+    right: 10%;
+    top: 53%;
+
+}
+
+.coffrefort
+{
+    display: block;
+    width: 8%;
+    height: 8%;
+    opacity: 0;
+    position: absolute;
+    right: 13%;
+    top: 22%;
+}
+.coffre
+{
+    display: block;
+    width: 16%;
+    height: 6%;
+    opacity: 0;
+    position: absolute;
+    right: 37%;
+    top: 70%;
+}
+.miror
+{
+    display: block;
+    width: 4%;
+    height: 16%;
+    opacity: 0;
+    position: absolute;
+    right: 75%;
+    top: 28%;
+}
+.lampe1
+{
+    display: block;
+    width: 2%;
+    height: 6%;
+    opacity: 0;
+    position: absolute;
+    right: 81%;
+    top: 30%;
+}
+
+.lampe2
+{
+    display: block;
+    width: 2%;
+    height: 6%;
+    opacity: 0;
+    position: absolute;
+    right: 68%;
+    top: 32%;
+}
+.lampe3
+{
+    display: block;
+    width: 2%;
+    height: 6%;
+    opacity: 0;
+    position: absolute;
+    right: 31%;
+    top: 33%;
+}
+.lampe4
+{
+    display: block;
+    width: 2%;
+    height: 6%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 28%;
+    
+}
+
+.table
+{
+    display: block;
+    width: 35%;
+    height:15%;
+    position: absolute;
+    right: 62%;
+    top: 78%;
+    opacity: 0;
+}
+.porte
+{
+    display: block;
+    width: 9%;
+    height: 30%;
+    opacity: 0;
+    position: absolute;
+    right: 40%;
+    top: 26%;
+}
+
+.accepterRegles
+{
+    background-color: blue;
+    position : absolute;
+    top : 50%;
+    right:50%;
+    width: 50px;
+    height : 50px;
+}
+
+.btnPopup{
+    background-color : royalblue;
+    padding: 1em;
+    cursor: pointer;
+ }
+
+ .btnPopup:hover{
+    background-color: yellow;
+ }
+ .overlay{
+    z-index: 1;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display:none;
+ }
+ .popup {
+    margin: 20% auto;
+    width: 70%;
+    background-color: rgb(228, 228, 228);
+    border-radius:5px;
+    box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 1em;
+
+ }
+ .btnClose{
+    float:right;
+    font-size: 15px;
+ }
+ .displayBlockFail
+ {
+     display : none;
+     color : red;
+ }
+ .displayBlockSucces
+ {
+    display : none;
+ }
+
+ a{
+    text-decoration: none;    
+ }
+ a:visited
+ {
+     color : initial;
+ }

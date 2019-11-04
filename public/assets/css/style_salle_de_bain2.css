@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+ body
+ {
+    position: relative;
+    background-image: url(../img/4358e169b7da727317f01b1d42083142.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+ }
+ .statue
+ {
+    display: block;
+    width: 4%;
+    height: 7%;
+    opacity: 0;
+    position: absolute;
+    right: 21%;
+    top: 14%;
+ }
+ .dressing_table
+ {
+    display: block;
+    width: 19%;
+    height: 15%;
+    opacity: 0;
+    position: absolute;
+    right: 57%;
+    top: 51%;
+ }
+ .sink
+ {
+    display: block;
+    width: 14%;
+    height: 13%;
+    opacity: 0;
+    position: absolute;
+    right: 80%;
+    top: 55%;
+ }
+
+ .overlay, .overlay2{
+   position: fixed;
+   left: 0px;
+   top:0px;
+   background-color:rgba(0, 0, 0, 0.5);
+   width: 100%;
+   height: 100%;
+   display:none;
+}
+.popup, .popup2{
+   margin: 20% auto;
+   width: 70%;
+   background-color: rgb(228, 228, 228);
+   border-radius:5px;
+   box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.5);
+   padding: 1em;
+}
+.btnClose, .btnClose2{
+   float:right;
+   size: 10px;
+}

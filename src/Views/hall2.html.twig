@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mayté, Louis, valentin, Romain et Cyril">
+    <meta name="description" content="We are in the hall of a creepy manor.">
+    <title>Hall lugubre</title>
+    <link rel="stylesheet" href="assets/css/style-hall2.css">
+</head>
+
+<body>
+
+    <button id='btnBook1' class='book'></button>
+    <div id="overlay" class='overlay'>
+        <div id='popup' class='popup'>
+            <h3>
+                Il n'y a qu'un vieil exemplaire du Daily Telegraph sur cet table... il date visiblement de 1888...
+                <button id='btnClose' class='btnClose'>Reposer</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btnboard' class='board'></button>
+    <div id="overlay2" class='overlay'>
+        <div id='popup2' class='popup'>
+            <h3>
+                Une série de tableau de style Victorien : l'un représente visiblement le quartier de
+                Whitechapel, à Londres, tandis que les autres évoquent un homme étrange... Je ne sais plus comment il
+                s'appelle, mais je me souviens qu'on le surnomme l'Éventreur.
+                <button id='btnClose2' class='btnClose'>S'éloigner</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btnfontDoor' class='fontDoor'></button>
+    <div id="overlay3" class='overlay'>
+        <div id='popup3' class='popup'>
+            <h3>
+                Cette porte est toujours verrouillée... L'un des voyants du digicode est passé au vert. Il me demande
+                désormais une seconde information.
+                <button id='btnClose3' class='btnClose'>Je ne le sens pas, je préfère chercher d'autre indices.</button>
+
+                </br>
+                <div>
+                    <label for="code">Où a-t-il sévit ? : </label>
+                    <input name="code" id="code" class='input' placeholder="_ _ _ _ _ _ _ _ _ _ _ (11 lettres)">
+                    <h3 class='displayBlockFail'>Attention ! Ce n'est pas la bonne réponse !</h3>
+                    <h3 class='displayBlockSucces'><a href='chambre1.php'><button>Je trouve une pelle et m'en saisi. Je
+                                prends
+                                mon courage à deux mains, et monte quatre à quatre les escaliers. J'ouvre brutalement la
+                                porte que se trouve devant moi.</button></a>
+                    </h3>
+                </div>
+                <div>
+                    <button onclick="controle()">Tente ta chance !</button>
+                </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/script-hall2.js"></script>
+
+</body>
+
+</html>

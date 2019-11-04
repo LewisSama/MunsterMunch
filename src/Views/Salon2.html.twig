@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/Salon2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salon</title>
+</head>
+<body>
+    <button id="btnJournal" class="journal"></button>
+       <div id="overlay1" class='overlay'>
+           <div id='popup1' class='popup'>
+               <h3>
+                   A la Une :
+                   <span id='btnClose1' class='btnClose'>&times;</span>
+               </h3>
+               <p>
+                   «De soudaines disparitions dans la région inquiètent les habitants de Rochecorbon,
+                   la police essaye de résoudre ce problème depuis plusieurs semaines sans résultats … »».
+               </p>
+           </div>
+       </div>
+    <button id="btnImage" class="image"></button>
+       <div id="overlay2" class='overlay'>
+           <div id='popup2' class='popup'>
+               <h3>
+                   Peinture :
+                   <span id='btnClose2' class='btnClose'>&times;</span>
+               </h3>
+               <p>
+                   Que représente cette image ? Ah mais c’est l’image d’une femme sur un bûcher … C’est vraiment glauque !
+               </p>
+           </div>
+       </div>
+    <button id="btnLustre" class="lustre"></button>
+       <div id="overlay4" class='overlay'>
+           <div id='popup4' class='popup'>
+               <h3>
+                   Lustre :
+                   <span id='btnClose4' class='btnClose'>&times;</span>
+               </h3>
+               <p>
+                   Il n'y a toujours qu'une seule lumière rouge d'allumée.
+               </p>
+           </div>
+       </div>
+    <button id="btnBoite" class="boite"></button>
+       <div id="overlay5" class='overlay'>
+           <div id='popup5' class='popup'>
+               <h3>
+                   Boite :
+                   <span id='btnClose5' class='btnClose'>&times;</span>
+               </h3>
+               <p>
+                   Tiens une boite je vais essayer de l’ouvrir avec la clef *La boite s'ouvre*
+                   il y a une figurine abimée à l’intérieur, on dirait qu’elle a était brulée.
+                   <br>
+                   Une deuxième ampoule s'allume en rouge.
+               </p>
+           </div>
+       </div>
+    <button id="btnMallette" class="mallette"></button>
+       <div id="overlay6" class='overlay'>
+           <div id='popup6' class='popup'>
+               <h3>
+                   Mallette :
+                   <span id='btnClose6' class='btnClose'>&times;</span>
+               </h3>
+               <p>
+                   Il y a des notes dans cette malette …  ça ressemble à une énigme :
+                   Mon premier contient du la bière, Mon second est le cinquième mois de l’année, Mon tout est aussi léger que l’air.
+                   <br>                
+               </p>
+               <div>
+                    <label for="code">Ma réponse est </label>
+                        <input name="code" id="code" placeholder=" _ _ _ _ _">
+                        <h1 class="displayBlockFail">Mauvaise réponse attention !</h1>
+                        <h1 class="displayBlockSucces"><a href="/salon3.php"><button><a href="/salon3.php">Continuer à chercher !</a></button></h1>
+                </div>
+                <div>
+                    <button onclick="controle()">Valider ma réponse</button>
+                </div>
+           </div>
+           </div>
+       </div>    
+       </div>
+</body>
+<script src="assets/scripts/script2_salon.js"></script>
+</html>

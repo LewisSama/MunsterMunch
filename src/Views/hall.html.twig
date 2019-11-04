@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mayté, Louis, valentin, Romain et Cyril">
+    <meta name="description" content="We are in the hall of a creepy manor.">
+    <title>Hall lugubre</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-hall.css">
+</head>
+
+<body>
+    <button id="btnStairs1" class="creepy"></button>
+    <div id="overlay" class='overlay'>
+        <div id='popup' class='popup'>
+            <h3>
+                L'ombre en haut des escaliers... Je ne devrais pas y aller sans arme...
+                <button id='btnClose' class='btnClose'>Redescendre</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id="btnStairs2" class="highcreepy"></button>
+    <div id="overlay2" class='overlay'>
+        <div id='popup2' class='popup'>
+            <h3>
+                MON DIEU ! L'OMBRE EST DERRIÈRE LA PORTE !!!
+                <button id='btnClose2' class='btnClose'>DESCENDRE AU PLUS VITE !</button>
+            </h3>
+        </div>
+    </div>
+
+
+    <button id='btnCandle1' class='candle'></button>
+    <div id="overlay3" class='overlay'>
+        <div id='popup3' class='popup'>
+            <h3>
+                Aïe ! Cette bougie est brûlante !
+                <button id='btnClose3' class='btnClose'>Saleté de bougie !</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btnShadow1' class='shadow'></button>
+    <div id="overlay4" class='overlay'>
+        <div id='popup4' class='popup'>
+            <h3>
+                Fichtre... L'ombre... Elle n'est plus là...
+                <button id='btnClose4' class='btnClose'>Il faut vite que je parte d'ici !</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btnBook1' class='book'></button>
+    <div id="overlay5" class='overlay'>
+        <div id='popup5' class='popup'>
+            <h3>
+                Il n'y a qu'un vieil exemplaire du Daily Telegraph sur cette table... il date visiblement de 1888...
+                <button id='btnClose5' class='btnClose'>Reposer</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btnlightBulb1' class='lightBulb'></button>
+    <div id="overlay6" class='overlay'>
+        <div id='popup6' class='popup'>
+            <h3>
+                Cet applique n'a rien d'extraordinaire
+                <button id='btnClose6' class='btnClose'>En plus d'éclairer assez mal...</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btndoor1' class='door'></button>
+    <div id="overlay7" class='overlay'>
+        <div id='popup7' class='popup'>
+            <h3>
+                Cette porte ne bouge pas... Quelque chose semble la bloquer de l'autre côté...
+                <button id='btnClose7' class='btnClose'>Maudite porte !</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btncarpet1' class='carpet'></button>
+    <div id="overlay8" class='overlay'>
+        <div id='popup8' class='popup'>
+
+            <h3>
+                C'est un vieux tapis, si ancien que l'on en voit la corde. Il y a des traces bourbon de mauvaise qualité
+                dessus... Sacré Daniel's !
+                <button id='btnClose8' class='btnClose'>S'éloigner</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btncandelabra1' class='candelabra'></button>
+    <div id="overlay9" class='overlay'>
+        <div id='popup9' class='popup'>
+            <h3>
+                Il fait très sombre ici... Je verrai sans doute mieux s’il y avait un peu plus de lumière.
+                <button id='btnClose9' class='btnClose'>Chercher une source de lumière</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btnboard' class='board'></button>
+    <div id="overlay11" class='overlay'>
+        <div id='popup11' class='popup'>
+            <h3>
+                Une série de tableau de style Victorien : l'un représente visiblement le quartier de
+                Whitechapel, à Londres, tandis que les autres évoquent un homme étrange... je ne sais plus comment il
+                s'appelle, mais je me souviens qu'on le surnomme l'Éventreur.
+                <button id='btnClose11' class='btnClose'>S'éloigner</button>
+            </h3>
+        </div>
+    </div>
+
+    <button id='btnfontDoor' class='fontDoor'></button>
+    <div id="overlay10" class='overlay'>
+        <div id='popup10' class='popup'>
+            <h3>
+                Cette porte est verrouillée... Pourtant, un digicode à deux entrées attire le regard. Il demande
+                plusieurs informations sur le propriétaire.
+                <button id='btnClose10' class='btnClose'>Je ne le sens pas, je préfère chercher d'autre
+                    indices.</button>
+                </br>
+                <div>
+                    <label for="code">La première information est : </label>
+                    <input name="code" id="code" class="input" placeholder="_ _ _ _ (4 lettres)">
+                    <h3 class='displayBlockFail'>Attention ! Ce n'est pas le bon nom !</h3>
+                    <h3 class='displayBlockSucces'><a href='hall2.php'><button>Validation</button></a></h3>
+                </div>
+                <div>
+                    <button onclick="controle()">Tente ta chance !</button>
+                </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/script-hall1.js"></script>
+
+</body>
+
+</html>

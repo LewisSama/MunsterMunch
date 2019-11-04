@@ -1,0 +1,121 @@
+body {
+    position: relative;
+    background-image: url(../img/jigsaw-hero-1400x788.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.cadenas_porte{
+    display: block;
+    width: 4%;
+    height: 4%;
+    background-color: blue;
+    position: absolute;
+    right: 78.5%;
+    top: 57%;
+    opacity: 0;
+}
+.roue{
+    display: block;
+    width: 6%;
+    height: 14%;
+    background-color: blue;
+    position: absolute;
+    right:54%;
+    top: 36%;
+    opacity: 0;
+    border-radius: 60%;
+}
+.tiroir{
+    display: block;
+    width: 12%;
+    height: 8%;
+    background-color: blue;
+    position: absolute;
+    right: 25%;
+    top: 78%;
+    opacity: 0;
+    transform: rotate(18deg);
+}
+.boitaclef{
+    display: block;
+    width: 7%;
+    height: 12%;
+    background-color: blue;
+    position: absolute;
+    right: 13.5%;
+    top: 57%;
+    opacity: 0;
+    transform: rotate(10deg);
+}
+.timer{
+    display: block;
+    width: 11.5%;
+    height: 12%;
+    background-color: blue;
+    position: absolute;
+    right: 9%;
+    top: 7%;
+    opacity: 0;
+}
+.hache {
+    display: block;
+    width: 2.8%;
+    height: 31%;
+    background-color: blue;
+    position: absolute;
+    right: 50%;
+    top: 19.8%;
+    opacity: 0;
+}
+.evier{
+    display: block;
+    width: 13%;
+    height: 7%;
+    background-color: blue;
+    position: absolute;
+    right: 39%;
+    top: 62%;
+    opacity: 0;
+}
+.mot_cle{
+    display: block;
+    width: 5%;
+    height: 5%;
+    background-color: blue;
+    position: absolute;
+    right: 40%;
+    top: 39%;
+    opacity: 0;
+}
+
+
+
+
+
+/* Snippet css */
+.overlay, .overlay2{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+}
+.popup, .popup2{
+    margin: 20% auto;
+    width: 70%;
+    background-color: rgb(228, 228, 228);
+    border-radius:5px;
+    box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+.btnClose, .btnClose2{
+    float:right;
+    size: 10px;
+}

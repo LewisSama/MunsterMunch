@@ -1,0 +1,17 @@
+{
+
+    "name": "salazhar/munster-munch",
+    "description": "Halloween",
+    "type": "project",
+    "authors": [
+        {
+            "name": "salazhar",
+            "email": "canoine.cyril@gmail.com"
+        }
+    ],
+    "require": {
+        "php-kit/ext-pdo": "^1.1",
+        "twig/twig": "^2.12"
+
+    }
+}
